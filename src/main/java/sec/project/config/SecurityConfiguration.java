@@ -21,10 +21,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         // no real security at the moment
-        http.authorizeRequests()
-                .anyRequest().permitAll();
+        // ****
+        // Let's keep it that way!
     }
 
+    /*** To be disabled for testing purposes, enable for production server!
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
@@ -34,4 +35,5 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+    **/
 }

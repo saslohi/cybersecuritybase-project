@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Admins only!</title>
+    </head>
+
+    <body>
+        <div id="adminsonly">
+            <h2> A list of signups, only to be viewed by authorized personnel! </h2>
+            <ul>
+                <li th:each="signup : ${signups}">
+                    <span th:utext="${signup.name}"> </span>
+                    <span th:utext="${signup.address}"> </span>
+                </li>
+            </ul>
+
+        </div>
+
+    </body>
+</html>
