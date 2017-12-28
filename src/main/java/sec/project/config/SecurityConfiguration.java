@@ -23,6 +23,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         // no real security at the moment
         // ****
         // Let's keep it that way!
+        http.authorizeRequests()
+                .anyRequest().permitAll();
     }
 
     /*** To be disabled for testing purposes, enable for production server!
