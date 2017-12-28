@@ -16,7 +16,7 @@ The flaws this piece of software has:
 1. Start the server
 2. Go to ``http://localhost:8080/``
 3. Register with a name ``<script> alert("All your base are belong to us!") </script>``
-4. Go to ``http:/localhost:8080/adminpage/``
+4. Go to ``http://localhost:8080/adminpage/``
 4. Now the alert should be shown. The attacker could run all kind of .js on the page!
 
 Issues:
@@ -34,7 +34,7 @@ Go to ``adminpage.html`` and change utext from the signups to just text. Simple 
 1. Start the server
 2. Go to ``http://localhost:8080/``
 3. Register with a name and address
-4. Go to ``http:/localhost:8080/adminpage/``
+4. Go to ``http://localhost:8080/adminpage/``
 5. See the signup information you should not be able to see, as you are not an admin!
 
 Issues:
